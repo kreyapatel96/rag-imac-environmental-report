@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --ink: #1d1d1f;
+  --muted: #6e6e73;
+  --line: #e5e5ea;
+  --accent: #0a7d4f;
+  --accent-soft: #e4f4ec;
+  --warn: #b25e00;
+  --warn-soft: #fff3e0;
+  --bad: #c0332b;
+  --bad-soft: #fdecea;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0d0f;
+    --card: #1a1a1d;
+    --ink: #f5f5f7;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #3ddc97;
+    --accent-soft: #11291f;
+    --warn: #ffb454;
+    --warn-soft: #2d2008;
+    --bad: #ff7a70;
+    --bad-soft: #321412;
+  }
+}
+@theme inline {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+}
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

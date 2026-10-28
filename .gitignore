@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+build
+coverage
+*.tsbuildinfo
+next-env.d.ts
+.env
+.env.local
+.env.*.local
+# Local persistent document storage (uploaded PDFs, manifest, page cache)
+/data/*
+!/data/.gitkeep
+.DS_Store
